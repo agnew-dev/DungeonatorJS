@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <script src="js/dungeonator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <button id="createShop">Create</button
+    <div id="shopInfo">
+      <ul>
+        <li id="shopName"></li>
+        <li id="shopCategory"></li>
+      </ul>
+    </div>
+    <script>
+      $('#createShop').click(function(){
+        var shop = Dungeonator.CreateShop();
+        $("#shopName").html(shop.shopName);
+        $("#shopCategory").html(shop.shopCategory);
+      });
+
+    </script>
+  </body>
+</html>
